@@ -11,17 +11,56 @@ a {
 h1 {
 	font-size: 80px;
 	font-weight: 600;
+	letter-spacing: -2.5px;
 	color: #192b59;	
+	line-height: 1.1;
+	max-width: 540px;
+	margin-bottom: 65px;
+}
+
+.title-h2 {
+	font-size: 50px;
+	font-weight: 600;
+	color: #192b59;
+}
+
+.title-h2 span {
+	display: block;
+	font-size: 16px;
+	font-weight: 800;
+	color: #1085e4;
+	margin-bottom: 50px;
+}
+
+.page-stat .title-h2 {
+	text-align: center;
+	letter-spacing: 3px;
+	max-width: 500px;
+	line-height: 1.2px;
+	letter-spacing: -1.5px;
+}
+
+.wrap {
+	max-width: 1110px;
+	margin: 0 auto;
 }
 
 .nav {
 	font-size: 12px;
 	font-weight: 700;
-	color: #6e7ea9;
 	text-transform: uppercase;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	display: flex;
+}
+
+.nav>li {
+	padding: 0 15px;
+}
+
+.nav-item {
+	color: #6e7ea9;
 }
 
 .btn-primary {
@@ -104,46 +143,30 @@ h1 {
 	font-weight: 600;
 }
 
-.page-subscribe h2, p, input, button {
-	color: #ffffff;
-}
-
-.page-subscribe span {
-	color: #00bffe;
-}
-
-.page-software h3 {
-	color: #192b59;
-}
-
-.page-software dl dt {
-	color: #7581a1;
-	font-style: 16px;
-	font-weight: 600;
-}
-
-.page-software dd {
-	color: #7581a1;
-}
-
-.page-stat h3 {
-	color: #192b59;
-}
-
-.page-stat h3 span {
-	color: #1085e4;
-}
-
-.page-stat ul li {
-	font-size: 12px;
-	color: #1085e4;
-}
-
-.page-stat ul li span {
-	color: #bacbdc;
-	font-size: 60px;
-}
-
 .page-app h2 {
 	color: #192b59;
+}
+
+.list-stat {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+.list-stat>li {
+	font-size: 12px;
+	color: #1085e4;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2.7px;
+}
+
+.list-stat>li>span {
+	display: block;
+	font-style: 60px;
+	color: #bacbdc;
+	font-size: 60px;
+	margin-bottom: 25px;
+	letter-spacing: 0;
 }
