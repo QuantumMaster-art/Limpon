@@ -22,6 +22,8 @@ h1 {
 	font-size: 50px;
 	font-weight: 600;
 	color: #192b59;
+	line-height: 1.2;
+	letter-spacing: -1.5px;
 }
 
 .title-h2 span {
@@ -29,15 +31,30 @@ h1 {
 	font-size: 16px;
 	font-weight: 800;
 	color: #1085e4;
-	margin-bottom: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 14px;
+}
+
+.page-stat .title-h2,
+.page-screen .title-h2 {
+	text-align: center;
+	margin: 0 auto;
 }
 
 .page-stat .title-h2 {
-	text-align: center;
-	letter-spacing: 3px;
 	max-width: 500px;
-	line-height: 1.2px;
-	letter-spacing: -1.5px;
+}
+
+.page-screen .title-h2 {
+	font-style: 40px;
+	letter-spacing: -1.1px;
+}
+
+.page-screen .title-h2 span {
+	font-style: 18px;
+	margin-bottom: 20px;
+	letter-spacing: 3.5px;
 }
 
 .wrap {
@@ -151,6 +168,7 @@ h1 {
 	display: flex;
 	justify-content: space-around;
 	list-style-type: none;
+	margin-top: 76px;
 }
 
 .list-stat>li {
@@ -168,5 +186,24 @@ h1 {
 	color: #bacbdc;
 	font-size: 60px;
 	margin-bottom: 25px;
-	letter-spacing: 0;
+}
+
+.screen {
+	margin-top: 70px;
+}
+
+/* PAGE */ 
+
+.page-stat,
+.page-screen {
+	background-color: #edf6ff;
+}
+
+.page-stat {
+	padding: 116px 0 96px 0;
+}
+
+.page-screen {
+	padding: 116px 0 0 0;
+	text-align: center;
 }
