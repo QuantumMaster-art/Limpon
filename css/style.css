@@ -203,13 +203,13 @@ h1 {
 
 .box-price {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	margin-top: 82px;
 }
 
 .box-price-item {
 	background-color: #f5faff;
-	margin: 0 10px;
+	position: relative;
 	flex-basis: 32%;
 	padding: 90px 0 96px 0;
 }
@@ -219,16 +219,16 @@ h1 {
 	color: #fff;
 }
 
-.box-price-item ul>li {
-	margin-bottom: 14px;
-}
-
 .box-price-item ul {
 	list-style-type: none;
 	padding-left: 0;
 	margin-top: 34px;
 	margin-bottom: 59px;
 	font-style: 14px;
+}
+
+.box-price-item ul>li {
+	margin-bottom: 14px;
 }
 
 /* PAGE */ 
