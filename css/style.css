@@ -50,9 +50,8 @@ h1 {
 	font-weight: 800;
 	color: #1085e4;
 	text-transform: uppercase;
-	letter-spacing: 3px;
-	margin-bottom: 20px;
 	letter-spacing: 3.5px;
+	margin-bottom: 20px;
 }
 
 .page-stat .title-h2,
@@ -63,6 +62,12 @@ h1 {
 
 .page-stat .title-h2 {
 	max-width: 500px;
+}
+
+.page-subscribe .title-h2 {
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 25px;
 }
 
 .wrap {
@@ -109,12 +114,11 @@ h1 {
 	display: block;
 	background-image: url(../img/header-screen.png);
 	background-repeat: no-repeat;
-	width: 894px;
-	height: 741px;
-	background-repeat: no-repeat;
+	width: 895px;
+	height: 740px;
 	position: absolute;
 	right: 0;
-	top: 188px;
+	top: 189px;
 }
 
 .btn-primary {
@@ -213,6 +217,49 @@ h1 {
 	height: 69px;
 }
 
+.grid {
+	display: grid;
+	grid-template-areas: "a b c"
+						 "d b c"
+						 "d f g"
+						 "e f g"
+						 "e h h";
+	max-width: 1110px;
+	margin: 0 auto;
+}					
+
+.grid-title {
+	grid-area: a;
+}
+
+.grid-item-1 {
+	grid-area: b;
+}
+
+.grid-item-2 {
+	grid-area: c;
+}
+
+.grid-item-3 {
+	grid-area: d;
+}
+
+.grid-item-4 {
+	grid-area: e;
+}
+
+.grid-item-5 {
+	grid-area: f;
+}
+
+.grid-item-6 {
+	grid-area: g;
+}
+
+.grid-text {
+	grid-area: h;
+}
+
 .grid h2 {
 	font-size: 40px;
 	color: #192b59;
@@ -225,16 +272,63 @@ h1 {
 	display: block;
 }
 
+.grid-item {
+	text-align: center;
+	box-shadow: 0 0 5px #f4f4f4;
+}
+
 .grid-item h3 {
 	font-size: 20px;
 	color: #192b59;
 	font-weight: 600;
+	margin-bottom: 18px;
 }
 
 .grid-item a {
 	font-size: 14px;
 	color: #1085e4;
 	font-weight: 600;
+}
+
+.grid-icon {
+	background-repeat: no-repeat;
+	margin: 0 auto 36px;
+}
+
+.grid-icon-1 {
+	background-image: url(../img/grid/icon1.png);
+	width: 73px;
+	height: 79px;
+}
+
+.grid-icon-2 {
+	background-image: url(../img/grid/icon2.png);
+	width: 89px;
+	height: 85px;
+}
+
+.grid-icon-3 {
+	background-image: url(../img/grid/icon3.png);
+	width: 79px;
+	height: 82px;
+}
+
+.grid-icon-4 {
+	background-image: url(../img/grid/icon4.png);
+	width: 85px;
+	height: 90px;
+}
+
+.grid-icon-5 {
+	background-image: url(../img/grid/icon5.png);
+	width: 100px;
+	height: 87px;
+}
+
+.grid-icon-6 {
+	background-image: url(../img/grid/icon6.png);
+	width: 103px;
+	height: 92px;
 }
 
 .page-app h2 {
@@ -356,6 +450,7 @@ h1 {
 	background-image: url(../img/bg-company.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 106px 0 99px;
 }
 
 .page-stat,
@@ -373,5 +468,68 @@ h1 {
 }
 
 .page-screen {
-	padding: 85px 0 0 0;
+	padding: 116px 0 0 0;
 }
+
+.page-subscribe {
+	padding: 25px 0 28px 0;
+	color: #fff;
+	background: rgba(10,32,144,1);
+	background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+	background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+}
+
+.box-subscribe {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.box-subscribe-text {
+	font-size: 18px;
+	max-width: 437px;
+}
+
+.box-subscribe-user {
+	position: relative;
+}
+
+.box-subscribe-user input {
+	border: 2px solid #3f5cb1;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 45px;
+	background-color: transparent;
+	padding: 25px 230px 25px 37px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.box-subscribe-user .btn-primary {
+	position: absolute;
+	top: 9px;
+	right: 8px;
+	padding: 17px 50px;
+}
+
+.box-subscribe-user input:focus,
+.box-subscribe-user .btn-primary {
+	outline: none;
+}
+
+.box-subscribe-child {
+	flex-basis: 49%;
+}
+
+.box-subscribe-user input:::-webkit-input-placeholder {color:#c0392b;}
+.box-subscribe-user input:::-moz-placeholder          {color:#c0392b;}
+.box-subscribe-user input::-moz-placeholder           {color:#c0392b;}
+.box-subscribe-user input::-ms-input-placeholder      {color:#c0392b;}
+
