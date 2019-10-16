@@ -186,7 +186,6 @@ h1 {
 	align-items: center;
 	max-width: 1110px;
 	margin: 0 auto;
-	padding: 105px 0 99px 0;
 }
 
 .list-company-item {
@@ -226,6 +225,7 @@ h1 {
 						 "e h h";
 	max-width: 1110px;
 	margin: 0 auto;
+	margin-top: 180px;
 }					
 
 .grid-title {
